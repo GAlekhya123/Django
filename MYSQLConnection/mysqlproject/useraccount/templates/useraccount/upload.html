@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REGISTRATION FORM</title>
+</head>
+<body>
+	<form method="POST" action="{% url 'upload' %}" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{form.as_p}}
+		<button type="submit">upload</button>
+		
+	</form>
+</body>
+</html>

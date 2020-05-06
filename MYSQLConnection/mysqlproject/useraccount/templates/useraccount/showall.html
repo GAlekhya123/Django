@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display</title>
+</head>
+<body>
+	<table border="1">
+		{% for row in data %}
+			<tr>
+			<td>{{row.fullname}}</td>
+			<td><a href="{% url 'details' row.id %}">details</a></td>
+		</tr>
+		{% endfor %}
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Images</title>
+</head>
+<body>
+	{% for row in data %}
+	<h3>{{row.fullname}}</h3>
+	<img src="/images/{{row.image}}" height=120 width=100>
+	{% endfor %}
+
+</body>
+</html>
