@@ -1,15 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Signin Form</title>
-</head>
-<body>
-	<form method="POST" action="">
-		{% csrf_token %}
-		{{form.as_p}}
-		<button type="submit">Signin</button>
-		
-	</form>
+{% extends 'userapp/header.html' %}
+{% block title %}
+SignIn Page 
+{% endblock title%}
+{% block content %}
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="card">
+		<div class="card-header bg-info">Signup Form</div>
+		<div class="card-body">
+			<form method="POST" action="">
+				{% csrf_token %}
+                
+				{{form.as_p}}
+				<!--{{form.first_name.label}}!-->
+	<button type="submit">Submit</button>
+</form>
+		</div>
+	</div>
+	</div>
+</div>
 
-</body>
-</html>
+
+
+{% endblock content %}

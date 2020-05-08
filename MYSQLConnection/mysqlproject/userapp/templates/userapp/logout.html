@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Logout Page</title>
-</head>
-<body>
+{% extends 'userapp/header.html' %}
+{% block title %}
+Logout Page 
+{% endblock title%}
+{% block content %}
+<div class ="justify-content-center">
+	<div class="alert alert-success ">
 	<h3>User Logged out</h3>
 	<a href="{% url 'login' %}">Click here to login again</a>
+</div>
+</div>
 
-</body>
-</html>
+{% endblock content %}

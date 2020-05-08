@@ -1,4 +1,16 @@
-<!DOCTYPE html>
+{% extends 'userapp/header.html' %}
+
+{% block title %}
+Home Page
+{% endblock title%}
+{% block content %}
+
+<!--<div class="alert alert-success ">
+<a class="nav-link" href="{% url 'login' %}">SignIn</a>
+<h3> Hi , Welcome <spam= style= 'color : blue'>  {{request.user}}</spam> </h3>
+</div>-->
+{% endblock content %}
+<!--<!DOCTYPE html>
 <html>
 <head>
 	<title>Home Page</title>
@@ -9,4 +21,7 @@
 	<a href="{% url 'logout' %}">Logout</a>
 
 </body>
-</html>
+</html>-->
+
+
+
